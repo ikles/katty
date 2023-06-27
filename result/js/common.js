@@ -20,6 +20,15 @@ jQuery(document).ready(function( $ ) {
 
 
 
+  $(".parent").hover(
+    function() {
+      $('nav.menu').addClass('open');      
+    }, function() {
+      $('nav.menu').removeClass('open');      
+    }
+    );
+
+
 
 //levels menu
   let isMobile={Android:function(){return navigator.userAgent.match(/Android/i)},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)},Opera:function(){return navigator.userAgent.match(/Opera Mini/i)},Windows:function(){return navigator.userAgent.match(/IEMobile/i)},any:function(){return(isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows())}}
@@ -51,8 +60,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  let timerId = setInterval(() => $('.slider-3').css('transform', 'translateX(-1px)'), 1000);
-
+  
 
   $('.topslider').slick({
     infinite: true,    
@@ -69,7 +77,6 @@ jQuery(document).ready(function( $ ) {
   
 
 
-  
 
   
 
@@ -103,7 +110,7 @@ jQuery(document).ready(function( $ ) {
   });
 
   $('.teaser__row-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    
+
   });
 
 
@@ -176,6 +183,18 @@ $('.eye-3').click(function (e) {
       minimumResultsForSearch: -1
     });
   }
+
+
+
+  $("#video__play").click(function(e){
+    e.preventDefault();
+    var dataYoutube = $(this).parents('.js-video').attr('data-youtube');
+    $(this).parents('.js-video').html('<iframe width=100% height=100% src="https://www.youtube.com/embed/'+ dataYoutube +'?autoplay=1" frameborder="0" allowfullscreen></iframe>')
+  });
+
+
+
+
 
 }); //ready
 
