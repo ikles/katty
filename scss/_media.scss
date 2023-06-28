@@ -47,27 +47,27 @@
 
 @media only screen and (max-width : 1367px) {
   .contain {
-    max-width: 1170px
+    max-width: 1140px
   }      
 }//1415
+
 
 @media only screen and (max-width : 1199px) {
   .contain {
     max-width: 970px
-  }    
-}//1199
-
+  }      
+}//1415
 
 @media only screen and (max-width : 991px) {
   .contain {
-    max-width: 750px 
+    max-width: 728px;    
   }    
 } //991
 
 
 @media only screen and (max-width : 767px) {
   .contain {
-    max-width: 600px;
+    max-width: 600px;    
   }
 }//767
 
@@ -83,8 +83,8 @@
   .contain {
     width: 100%;
     max-width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }//575
 

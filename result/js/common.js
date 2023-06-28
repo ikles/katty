@@ -6,27 +6,12 @@ jQuery(document).ready(function( $ ) {
     return false;
   });
 
-  $('body').click(function () {
-    if( $(".toggle-mnu").hasClass("on") ){
-      $(".toggle-mnu").removeClass("on");
-      $(".top-mnu").fadeOut();
-    }
-  });
-
-
-  $(".top-mnu").click(function (e) {
-    e.stopPropagation();
-  });
+  
 
 
 
-  $(".parent").hover(
-    function() {
-      $('nav.menu').addClass('open');      
-    }, function() {
-      $('nav.menu').removeClass('open');      
-    }
-    );
+
+
 
 
 
@@ -57,9 +42,48 @@ jQuery(document).ready(function( $ ) {
 
 
 
+  $(".parent").hover(
+    function() {
+      $('.mouse nav.menu').addClass('open');      
+    }, function() {
+      $('.mouse nav.menu').removeClass('open');      
+    }
+    );
+
+/*  $(".mouse .burger").hover(
+    function() {
+      $('nav.menu').addClass('show');      
+    }, function() {      
+    }
+    );*/
+
+
+  $('.burger').click(function () {
+    $('nav.menu').toggleClass('show');
+    $('.overlay').toggleClass('show');
+  });
+
+
+  $(".mouse nav.menu").hover(
+    function() {
+
+    }, function() {      
+      $('nav.menu').removeClass('show');  
+      $('.overlay').removeClass('show');  
+    }
+    );
 
 
 
+  $('body').click(function () {    
+    $('nav.menu').removeClass('show');
+    $('.overlay').removeClass('show');
+  });
+
+
+  $("nav.menu, .burger").click(function (e) {
+    e.stopPropagation();
+  });
   
 
   $('.topslider').slick({
@@ -92,9 +116,31 @@ jQuery(document).ready(function( $ ) {
     autoplaySpeed: 0,  
     arrows: true,
     dots: false,
-    pauseOnHover: true,  
+    pauseOnHover: true,
+    responsive: [
+
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2        
+      }
+    }
+    ]
   });
 
+
+  
+  $(window).resize(function() {
+    if( $(window).width() < 641 ) {
+      $('.teaser__row-slider').slick('unslick');
+    }
+  });
+
+
+  if( $(window).width() < 641 ) {
+    $('.teaser__row-slider').slick('unslick');
+  }
+  
 
   $('.teaser__slider').slick({
     infinite: true,    
@@ -106,11 +152,7 @@ jQuery(document).ready(function( $ ) {
     autoplaySpeed: 0,  
     arrows: true,
     dots: true,
-    pauseOnHover: true,  
-  });
-
-  $('.teaser__row-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-
+    pauseOnHover: true,     
   });
 
 
