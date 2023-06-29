@@ -35,6 +35,33 @@
       <div class="category">
         <div class="contain">          
           <h1>Пижамы</h1>
+
+          <form class="sort__form">
+            <select class="sort__select-1">              
+              <option value="Пол">Пол</option>
+              <option value="Женский">Женский</option>
+              <option value="Мужской">Мужской</option>
+            </select>
+
+            <select class="js-select" multiple="multiple">
+              <option value="XS" data-badge="">XS</option>
+              <option value="S" data-badge="">S</option>
+              <option value="M" data-badge="">M</option>
+              <option value="L" data-badge="">L</option>
+              <option value="XL" data-badge="">XL</option>                            
+            </select>
+
+            <!-- <div class="sort__selectbox">
+              <label>
+                <input type="checkbox">              
+                <span>XS</span>
+              </label>
+            </div> -->
+            <button class="btn">Показать</button>
+          </form>
+
+
+
           <div class="teaser__row teaser__list">
             <div class="teaser__col">
               @@include('var/_teaser__it.html',{

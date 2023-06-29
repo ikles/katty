@@ -227,6 +227,19 @@ $('.eye-3').click(function (e) {
   }
 
 
+  if($('.js-select').length) {
+    $(".js-select").select2({
+      closeOnSelect : false,
+      placeholder : "Размер",
+      allowHtml: true,
+      allowClear: true
+    });
+  }
+
+
+//$('.js-select .select2-search--inline').html('Размер');
+
+
 
   $("#video__play").click(function(e){
     e.preventDefault();
