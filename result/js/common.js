@@ -78,10 +78,12 @@ jQuery(document).ready(function( $ ) {
   $('body').click(function () {    
     $('nav.menu').removeClass('show');
     $('.overlay').removeClass('show');
+    $('.sort__item').removeClass('open');
+    $('.sort__item-rendered').removeClass('show');
   });
 
 
-  $("nav.menu, .burger").click(function (e) {
+  $("nav.menu, .burger, .sort__item, .sort__item-rendered").click(function (e) {
     e.stopPropagation();
   });
   
@@ -98,12 +100,6 @@ jQuery(document).ready(function( $ ) {
     dots: true,
     pauseOnHover: true,  
   });
-  
-
-
-
-  
-
   
 
   $('.teaser__row-slider').slick({
@@ -127,8 +123,6 @@ jQuery(document).ready(function( $ ) {
     }
     ]
   });
-
-
   
   $(window).resize(function() {
     if( $(window).width() < 641 ) {
@@ -151,10 +145,67 @@ jQuery(document).ready(function( $ ) {
     cssEase: 'linear',  
     autoplaySpeed: 0,  
     arrows: true,
-    dots: true,
+    dots: false,
     pauseOnHover: true,     
   });
 
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    arrows: false,
+    centerMode: false,
+    vertical: true,
+    focusOnSelect: true
+  });
+
+
+  $('[data-fancybox="gallery"]').fancybox({
+    arrows: true,
+    infobar: true,
+    smallBtn: false,
+    toolbar: true,
+    iframe : {
+      css : {
+        width : '950px'
+      }
+    },    
+    slideClass: "myClass",
+    baseClass: "myclass"
+  });
+
+$('.favourites__remove').click(function () {
+  $(this).closest('tr').remove();
+})
+
+
+  $('.accordion-content').first().slideDown().toggleClass('open-content');
+  $('.accordion-header').click(function () {
+    $(this).toggleClass('active-header');
+    $(this).next().slideToggle().toggleClass('open-content');
+  });
+
+
+function tabs(element) {    
+$(element).find('.tabs__list-item').click(function () {
+$(element).find('.tabs__list-item').removeClass('active');
+$(this).addClass('active');    
+let num = $(this).index();
+$(element).find('.tabs__content-list-item').removeClass('active');
+$(element).find('.tabs__content-list-item').eq(num).addClass('active');    
+});
+}
+
+tabs('.card__tabs');
 
 /************************************/
 
@@ -201,6 +252,9 @@ $('.eye-3').click(function (e) {
   popup('.link', '.modal-overlay_1', '.modal-close_1');
 
 
+/*.btn__quick
+.btn__discount*/
+
   $('a[href*=\\#]:not([href=\\#])').click(function () {
     elementClick = $(this).attr("href");
     destination = $(elementClick).offset().top;
@@ -226,15 +280,10 @@ $('.eye-3').click(function (e) {
     });
   }
 
-
-  if($('.js-select').length) {
-    $(".js-select").select2({
-      closeOnSelect : false,
-      placeholder : "Размер",
-      allowHtml: true,
-      allowClear: true
-    });
-  }
+  $('.sort__item').click(function () {
+    $(this).toggleClass('open');
+    $(this).find('.sort__item-rendered').toggleClass('show');
+  });
 
 
 //$('.js-select .select2-search--inline').html('Размер');

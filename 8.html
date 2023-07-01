@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>8. account</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Аккаунт</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="account">
+        <div class="contain">
+          <div class="account__row">
+            <div class="account__mnu">
+              <div class="account__h2 h2">Личный кабинет</div>
+              <ul class="account__ul">
+                <li><a href="">Вход</a></li>
+                <li><a href="">Регистрация</a></li>
+                <li><a href="">Моя информация</a></li>
+                <li><a href="">Избранное</a></li>
+                <li><a href="">История заказов</a></li>
+                <li><a href="">Моя скидка</a></li>
+              </ul>
+            </div>
+            <div class="account__new">
+              <div class="h3">Новый покупатель</div>
+              <p>Создание учётной записи поможет делать покупки быстрее и удобнее. Вы также сможете отслеживать статус
+                своего заказа, пользоваться закладками, видеть свои предыдущие заказы или получить скидку как наш
+              постоянный покупатель.</p>
+              <a href="" class="account__btn btn">Регистрация</a>
+            </div>
+            <div class="account__regular">
+              <div class="h3">Постоянный покупатель</div>
+              <form class="account__form">
+                <input class="account__input" type="text"
+                placeholder="Электронная почта">
+                <input class="account__input" type="text" placeholder="Пароль">
+                <a href="" class="account__forget">Забыли пароль?</a>
+                <button class="account__btn btn">Войти</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+
+</html>

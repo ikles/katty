@@ -6,7 +6,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2. catalog</title>
+  <title>3. card product</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
@@ -216,327 +216,174 @@
         </div>
       </div>
 
-      <div class="category">
-        <div class="contain">          
-          <h1>Пижамы</h1>
 
-          <form class="sort__form">
-            <select class="sort__select-1">              
-              <option value="Пол">Пол</option>
-              <option value="Женский">Женский</option>
-              <option value="Мужской">Мужской</option>
-            </select>
-
-            <div class="sort__sizes sort__item">
-              <div class="sort__item-text">Размер</div>
-              <div class="sort__item-rendered">
-                <label>
-                  <input type="checkbox" value="XS">
-                  <span></span>
-                  <div>XS</div>
-                </label>
-                <label>
-                  <input type="checkbox" value="S">
-                  <span></span>
-                  <div>S</div>
-                </label>
-                <label>
-                  <input type="checkbox" value="M">
-                  <span></span>
-                  <div>M</div>
-                </label>
-                <label>
-                  <input type="checkbox" value="L">
-                  <span></span>
-                  <div>L</div>
-                </label>
-                <label>
-                  <input type="checkbox" value="XL">
-                  <span></span>
-                  <div>XL</div>
-                </label>
+      <div class="card">
+        <div class="contain">
+          <div class="card__row">
+            <div class="card__gal">
+              <div class="card__gal-col">
+                <a class="card__thumbnail"><img src="img/card-mini.jpg" /></a>
               </div>
+              <a class="card__img-w"><img src="img/card-big.jpg" /></a>
             </div>
+            <div class="card__inf">
+              <div class="card__cat">Цветочная коллекция</div>
+              <div class="card__title">костюм Katy Coll</div>
+              <div class="card__price">10 000 ₽</div>
+              <form class="card__form">
+                <select class="card__select-size">
+                  <option value="Размер">Размер</option>
+                  <option value="XS">XS</option>
+                  <option value="S">S</option>
+                </select>
+                <div class="card__actions">
+                  <select class="card__select-count">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
 
-             <div class="sort__sizes sort__item">
-              <div class="sort__item-text">Цвет</div>
-              <div class="sort__item-rendered">
-                <label>
-                  <input type="checkbox" value="000">
-                  <span></span>
-                  <div class="chbcolor">
-                    <span style="background-color: #000;"></span>
+                  <button class="btn card__btn">Добавить в корзину</button>
+                  <label class="card__fav">
+                    <input type="checkbox">
+                    <span></span>                  
+                  </label>
+                </div>
+                <div class="card__colors">
+                  <label class="card__color-label">
+                    <input type="radio" name="color" checked>
+                    <div class="teaser__color">
+                      <span style="background-color: #000;"></span>
+                    </div>
+                  </label>
+                  <label class="card__color-label">
+                    <input type="radio" name="color">
+                    <div class="teaser__color">
+                      <span style="background-color: #2359C2;"></span>
+                    </div>
+                  </label>
+                  <label class="card__color-label">
+                    <input type="radio" name="color">
+                    <div class="teaser__color">
+                      <span style="background-color: #D82A2A;"></span>
+                    </div>
+                  </label>
+                  <label class="card__color-label">
+                    <input type="radio" name="color">
+                    <div class="teaser__color">
+                      <span style="background-color: #C8227D;"></span>
+                    </div>
+                  </label>
+                  <label class="card__color-label">
+                    <input type="radio" name="color">
+                    <div class="teaser__color">
+                      <span style="background-color: #F4D9C6;"></span>
+                    </div>
+                  </label>
+                </div>
+              </form>
+              <div class="card__desc">
+                <div class="accordion-container">
+                  <div class="accordion-item">
+                    <div class="accordion-header active-header">
+                      Описание
+                    </div>
+                    <div class="accordion-content">
+                      Летний костюм со свободными брюками и трикотажным топом. Белый трикотажный топ без рукавов с V-образным вырезом. Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      <button class="card__add">Добавить Вышивку</button>
+                    </div>
                   </div>
-                </label>
-                <label>
-                  <input type="checkbox" value="blue">
-                  <span></span>
-                  <div class="chbcolor">
-                    <span style="background-color: rgba(35, 89, 194, 1)"></span>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      Состав
+                    </div>
+                    <div class="accordion-content">
+                      Летний костюм со свободными брюками и трикотажным топом. Белый трикотажный топ без рукавов с V-образным вырезом. Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      <button class="card__add">Добавить Вышивку</button>
+                    </div>
                   </div>
-                </label>
-                <label>
-                  <input type="checkbox" value="red">
-                  <span></span>
-                  <div class="chbcolor">
-                    <span style="background-color: rgba(216, 42, 42, 1)"></span>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      Обмерная таблица
+                    </div>
+                    <div class="accordion-content">
+                      Летний костюм со свободными брюками и трикотажным топом. Белый трикотажный топ без рукавов с V-образным вырезом. Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      <button class="card__add">Добавить Вышивку</button>
+                    </div>
                   </div>
-                </label>
-                <label>
-                  <input type="checkbox" value="violet">
-                  <span></span>
-                  <div class="chbcolor">
-                    <span style="background-color: rgba(153, 35, 194, 1)"></span>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      Уход
+                    </div>
+                    <div class="accordion-content">
+                      Летний костюм со свободными брюками и трикотажным топом. Белый трикотажный топ без рукавов с V-образным вырезом. Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      <button class="card__add">Добавить Вышивку</button>
+                    </div>
                   </div>
-                </label>
-                <label>
-                  <input type="checkbox" value="green">
-                  <span></span>
-                  <div class="chbcolor">
-                    <span style="background-color: rgba(35, 194, 70, 1)"></span>
+                  <div class="accordion-item">
+                    <div class="accordion-header">
+                      Доставка и оплата
+                    </div>
+                    <div class="accordion-content">
+                      Летний костюм со свободными брюками и трикотажным топом. Белый трикотажный топ без рукавов с V-образным вырезом. Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      Фирменная подарочная упаковка включена в доставку. Наша модель ростом 1,85 м и носит размер М.
+                      <button class="card__add">Добавить Вышивку</button>
+                    </div>
                   </div>
-                </label>
-                <label>
-                  <input type="checkbox" value="yellow">
-                  <span></span>
-                  <div class="chbcolor">
-                    <span style="background-color: rgba(194, 178, 35, 1)"></span>
-                  </div>
-                </label>
+
+                </div>
               </div>
-            </div>
-
-            <!-- <div class="sort__selectbox">
-              <label>
-                <input type="checkbox">              
-                <span>XS</span>
-              </label>
-            </div> -->
-            <button class="btn">Показать</button>
-          </form>
-
-
-
-          <div class="teaser__row teaser__list">
-            <div class="teaser__col">
-              <div class="teaser__it">
-  <div class="teaser__slider">
-    <div class="teaser__slide">
-      <img src="img/teaser_1.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_2.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_3.jpg" class="teaser__img">
-    </div>
-  </div>
-  <a href="" class="teaser__content"><span class="teaser__cat">Классическая коллекция</span>
-    <div class="teaser__title">Пижама Passion</div>
-    <div class="teaser__colors">
-      <div class="teaser__color">
-        <span style="background-color: #000;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #2359C2;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #D82A2A;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #C8227D;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #F4D9C6;"></span>
-      </div>
-    </div>
-    <div class="teaser__price">10 000 ₽</div>
-  </a>
-</div>
-            </div>
-            <div class="teaser__col">
-              <div class="teaser__it">
-  <div class="teaser__slider">
-    <div class="teaser__slide">
-      <img src="img/teaser_2.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_3.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_1.jpg" class="teaser__img">
-    </div>
-  </div>
-  <a href="" class="teaser__content"><span class="teaser__cat">Классическая коллекция</span>
-    <div class="teaser__title">Пижама Passion</div>
-    <div class="teaser__colors">
-      <div class="teaser__color">
-        <span style="background-color: #000;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #2359C2;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #D82A2A;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #C8227D;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #F4D9C6;"></span>
-      </div>
-    </div>
-    <div class="teaser__price">10 000 ₽</div>
-  </a>
-</div>
-            </div>
-            <div class="teaser__col">
-              <div class="teaser__it">
-  <div class="teaser__slider">
-    <div class="teaser__slide">
-      <img src="img/teaser_1.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_2.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_3.jpg" class="teaser__img">
-    </div>
-  </div>
-  <a href="" class="teaser__content"><span class="teaser__cat">Классическая коллекция</span>
-    <div class="teaser__title">Пижама Passion</div>
-    <div class="teaser__colors">
-      <div class="teaser__color">
-        <span style="background-color: #000;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #2359C2;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #D82A2A;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #C8227D;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #F4D9C6;"></span>
-      </div>
-    </div>
-    <div class="teaser__price">10 000 ₽</div>
-  </a>
-</div>
-            </div>
-            <div class="teaser__col">
-              <div class="teaser__it">
-  <div class="teaser__slider">
-    <div class="teaser__slide">
-      <img src="img/teaser_3.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_2.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_1.jpg" class="teaser__img">
-    </div>
-  </div>
-  <a href="" class="teaser__content"><span class="teaser__cat">Классическая коллекция</span>
-    <div class="teaser__title">Пижама Passion</div>
-    <div class="teaser__colors">
-      <div class="teaser__color">
-        <span style="background-color: #000;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #2359C2;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #D82A2A;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #C8227D;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #F4D9C6;"></span>
-      </div>
-    </div>
-    <div class="teaser__price">10 000 ₽</div>
-  </a>
-</div>
-            </div>
-            <div class="teaser__col">
-              <div class="teaser__it">
-  <div class="teaser__slider">
-    <div class="teaser__slide">
-      <img src="img/teaser_1.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_2.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_3.jpg" class="teaser__img">
-    </div>
-  </div>
-  <a href="" class="teaser__content"><span class="teaser__cat">Классическая коллекция</span>
-    <div class="teaser__title">Пижама Passion</div>
-    <div class="teaser__colors">
-      <div class="teaser__color">
-        <span style="background-color: #000;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #2359C2;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #D82A2A;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #C8227D;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #F4D9C6;"></span>
-      </div>
-    </div>
-    <div class="teaser__price">10 000 ₽</div>
-  </a>
-</div>
-            </div>
-            <div class="teaser__col">
-              <div class="teaser__it">
-  <div class="teaser__slider">
-    <div class="teaser__slide">
-      <img src="img/teaser_2.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_3.jpg" class="teaser__img">
-    </div>
-    <div class="teaser__slide">
-      <img src="img/teaser_1.jpg" class="teaser__img">
-    </div>
-  </div>
-  <a href="" class="teaser__content"><span class="teaser__cat">Классическая коллекция</span>
-    <div class="teaser__title">Пижама Passion</div>
-    <div class="teaser__colors">
-      <div class="teaser__color">
-        <span style="background-color: #000;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #2359C2;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #D82A2A;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #C8227D;"></span>
-      </div>
-      <div class="teaser__color">
-        <span style="background-color: #F4D9C6;"></span>
-      </div>
-    </div>
-    <div class="teaser__price">10 000 ₽</div>
-  </a>
-</div>
             </div>
           </div>
         </div>
       </div>
+
+
+
+      
+      <div class="teaser__row teaser__list">
+        <div class="teaser__col">
+          <div class="teaser__it">
+  <div class="teaser__slider">
+    <div class="teaser__slide">
+      <img src="img/teaser_1.jpg" class="teaser__img">
+    </div>
+    <div class="teaser__slide">
+      <img src="img/teaser_2.jpg" class="teaser__img">
+    </div>
+    <div class="teaser__slide">
+      <img src="img/teaser_3.jpg" class="teaser__img">
+    </div>
+  </div>
+  <a href="" class="teaser__content"><span class="teaser__cat">Классическая коллекция</span>
+    <div class="teaser__title">Пижама Passion</div>
+    <div class="teaser__colors">
+      <div class="teaser__color">
+        <span style="background-color: #000;"></span>
+      </div>
+      <div class="teaser__color">
+        <span style="background-color: #2359C2;"></span>
+      </div>
+      <div class="teaser__color">
+        <span style="background-color: #D82A2A;"></span>
+      </div>
+      <div class="teaser__color">
+        <span style="background-color: #C8227D;"></span>
+      </div>
+      <div class="teaser__color">
+        <span style="background-color: #F4D9C6;"></span>
+      </div>
+    </div>
+    <div class="teaser__price">10 000 ₽</div>
+  </a>
+</div>
+        </div>
+      </div>
+
 
     </main>
     <div class="foot">

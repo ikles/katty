@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7. favourites</title>
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')
+    <main class="main inner-page">
+
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Избранное</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="favourites">
+        <div class="contain">
+          <div class="h2">Избранное</div>
+
+          <table class="favourites__table">
+            <thead>
+              <tr>
+                <td></td>
+                <td>Название товара</td>
+                <td>Размер</td>
+                <td>Код товара</td>
+                <td>Наличие</td>
+                <td>Цена за единицу</td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href=""><img src="img/fav_1.jpg" alt=""></a>
+                </td>
+                <td>
+                  <a href="">Пижамный костюм Katy Lux Home</a>
+                </td>
+                <td>S</td>
+                <td>p-2022-002</td>
+                <td>В наличии</td>
+                <td><strong>6 800 ₽</strong></td>
+                <td>
+                  <div class="favourites__remove"></div>
+                </td>                
+              </tr>
+               <tr>
+                <td>
+                  <a href=""><img src="img/fav_2.jpg" alt=""></a>
+                </td>
+                <td>
+                  <a href="">Пижамный костюм Katy Lux Home</a>
+                </td>
+                <td>M</td>
+                <td>p-2022-003</td>
+                <td>В наличии</td>
+                <td><strong>6 800 ₽</strong></td>
+                <td>
+                  <div class="favourites__remove"></div>
+                </td>                
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+
+    </main>
+    @@include('var/_footer.html')
+  </div>
+  <!--wrapper-->
+
+  @@include('var/_scripts.html')
+</body>
+
+</html>
