@@ -6,7 +6,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>6. order</title>
+  <title>5. basket</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
@@ -207,89 +207,101 @@
     <main class="main inner-page">
 
 
+      <div class="basket">
 
-     <div class="order">
-      <div class="contain">
-       <div class="order-nav">
-        <ul class="order-nav__ul">
-          <li>
-            <a href="">Корзина</a>            
-          </li>
-          <li>
-            <a href="" class="active">Оформление</a>            
-          </li>
-          <li>
-            <a href="">Спасибо!</a>            
-          </li>
-        </ul>
+        <div class="contain">
+
+          <div class="order-nav">
+            <ul class="order-nav__ul">
+              <li>
+                <a href="" class="active">Корзина</a>            
+              </li>
+              <li>
+                <a href="">Оформление</a>            
+              </li>
+              <li>
+                <a href="">Спасибо!</a>            
+              </li>
+            </ul>
+          </div>
+
+          <div class="basket__row">
+            <div class="basket__left">
+              <div class="basket__item basket-item">
+                <span class="basket-item__close"></span>
+                <div class="basket-item__left">
+                  <a href="">
+                    <img src="img/basket_1.jpg" alt="">
+                  </a>
+                </div>
+                <div class="basket-item__right">
+                  <a href="" class="basket-item__title">Пижама Passion</a>                  
+                  <div class="basket-item__price">10 000 ₽</div>
+                  <div class="basket-item__bottom">
+                    <div class="basket-item__params">
+                      <span>Цвет: <span>Красный</span></span>
+                      <span>Размер: <span>S</span></span>
+                    </div>
+                  </div>
+                  <div class="buy__quan">
+                    <div class="buy__quan-choice _minus"><img src="img/minus-buy.svg"></div>
+                    <input type="text" value="1">
+                    <div class="buy__quan-choice _plus"><img src="img/plus-buy.svg"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__item basket-item">
+                <span class="basket-item__close"></span>
+                <div class="basket-item__left">
+                  <a href="">
+                    <img src="img/basket_2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="basket-item__right">
+                  <a href="" class="basket-item__title">Katy Collection</a>                  
+                  <div class="basket-item__price">15 000 ₽</div>
+                  <div class="basket-item__bottom">
+                    <div class="basket-item__params">
+                      <span>Цвет: <span>Белый</span></span>
+                      <span>Размер: <span>140х200 + 300х300 + 50х75</span></span>
+                    </div>
+                  </div>
+                  <div class="buy__quan">
+                    <div class="buy__quan-choice _minus"><img src="img/minus-buy.svg"></div>
+                    <input type="text" value="2">
+                    <div class="buy__quan-choice _plus"><img src="img/plus-buy.svg"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!--basket__left-->
+
+            <div class="basket__right">
+              <div class="h3">Сумма заказа</div>
+              <div class="basket-right__tbl">
+                <div class="basket-right__row">
+                  <div class="basket-right__td">3 товара</div>
+                  <div class="basket-right__td2">40 000 ₽</div>
+                </div>
+                <div class="basket-right__row">
+                  <div class="basket-right__td">Доставка</div>
+                  <div class="basket-right__td2">Бесплатно</div>
+                </div>
+              </div>
+              <div class="basket-right__total">
+                <div class="basket-right__td">Итого</div>
+                <div class="basket-right__td2">40 000 ₽</div>
+              </div>
+              <a href="" class="basket__btn btn">Перейти к оформлению</a>
+            </div>
+            <!--basket__right-->
+          </div>
+
+        </div>
       </div>
 
-      <div class="h2 center">Личные данные</div>
-      <form class="order__form">
-        <div class="order__row">
-          <div class="order__col">
-            <input class="order__input" type="text" placeholder="Фамилия и имя">
-            <input class="order__input" type="text" placeholder="Номер телефона">
-            <input class="order__input" type="text" placeholder="Электронная почта">
-            <input class="order__input" type="text" placeholder="Комментарии к заказу">
-          </div>
-          <div class="order__col">
-            <input class="order__input" type="text" placeholder="Адрес (улица, дом, квартира)">
-            <input class="order__input" type="text" placeholder="Город">
-            <input class="order__input" type="text" placeholder="Почтовый индекс">
-            <select class="order__select">
-              <option value="Страна">Страна</option>
-              <option value="Россия">Россия</option>
-              <option value="Беларусь">Беларусь</option>
-            </select>
-          </div>
-        </div>
 
-        <div class="account__agree">
-          <p>Я согласен получать новостные рассылки</p>
-          <div class="account__agree-lbls">
-            <label class="account__agree-lbl">              
-              <input type="radio" name="agree" checked>
-              <span></span>
-              <div>Да</div>
-            </label>
-            <label class="account__agree-lbl">
-              <input type="radio" name="agree" >
-              <span></span>
-              <div>Нет</div>
-            </label>
-          </div>
-          <p>Вы первыми узнаете об эксклюзивных акциях и специальных предложениях</p>
-        </div>
-
-        <div class="security">
-          <div class="h2 center">Безопасная оплата</div>
-          <div class="security__row">
-            <label class="security__label">
-              <input type="radio" name="pay" checked>
-              <span></span>
-              <div>Онлайн оплата картой</div>
-            </label>
-            <label class="security__label">
-              <input type="radio" name="pay">
-              <span></span>
-              <div>Оплата при получении</div>
-            </label>
-          </div>
-        </div>
-
-        <div class="total">
-          <div class="h2 center">Итого</div>
-          <div class="total__count"><span>40 000</span> ₽</div>
-          <button class="total__btn btn">Подтвердить и оплатить заказ</button>
-        </div>
-
-      </form>
-    </div>
-  </div>
-
-</main>
-<div class="foot">
+    </main>
+    <div class="foot">
   <div class="contain">
     <div class="foot__logo-w">
       <a href="index.html" class="foot__logo"><img src="img/logo-foot.svg" /></a>
@@ -339,10 +351,10 @@
 </div>
 <div class="overlay"></div>
 
-</div>
-<!--wrapper-->
+  </div>
+  <!--wrapper-->
 
-<script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/select2.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>

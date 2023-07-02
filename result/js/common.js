@@ -183,9 +183,9 @@ jQuery(document).ready(function( $ ) {
     baseClass: "myclass"
   });
 
-$('.favourites__remove').click(function () {
-  $(this).closest('tr').remove();
-})
+  $('.favourites__remove').click(function () {
+    $(this).closest('tr').remove();
+  })
 
 
   $('.accordion-content').first().slideDown().toggleClass('open-content');
@@ -195,17 +195,17 @@ $('.favourites__remove').click(function () {
   });
 
 
-function tabs(element) {    
-$(element).find('.tabs__list-item').click(function () {
-$(element).find('.tabs__list-item').removeClass('active');
-$(this).addClass('active');    
-let num = $(this).index();
-$(element).find('.tabs__content-list-item').removeClass('active');
-$(element).find('.tabs__content-list-item').eq(num).addClass('active');    
-});
-}
+  function tabs(element) {    
+    $(element).find('.tabs__list-item').click(function () {
+      $(element).find('.tabs__list-item').removeClass('active');
+      $(this).addClass('active');    
+      let num = $(this).index();
+      $(element).find('.tabs__content-list-item').removeClass('active');
+      $(element).find('.tabs__content-list-item').eq(num).addClass('active');    
+    });
+  }
 
-tabs('.card__tabs');
+  tabs('.card__tabs');
 
 /************************************/
 
@@ -288,6 +288,28 @@ $('.eye-3').click(function (e) {
 
 //$('.js-select .select2-search--inline').html('Размер');
 
+
+
+  if( $('.buy__quan').length ) {    
+    $('.buy__quan').each(function () {
+      const self = $(this);
+      self.find('._plus').click(function () {
+        if (self.find('input[type="text"]').val() < 100) {
+          self.find('input[type="text"]').val(+self.find('input[type="text"]').val()+1);          
+        }        
+      });
+      self.find('._minus').click(function () {
+        if (self.find('input[type="text"]').val() >= 2) {
+          self.find('input[type="text"]').val(+self.find('input[type="text"]').val()-1);
+        }        
+      });
+    })
+  }
+
+
+  $('.basket-item__close').click(function () {
+    $(this).closest('.basket-item').remove();
+  })
 
 
   $("#video__play").click(function(e){

@@ -25,6 +25,7 @@
 
 
      <div class="order">
+      <div class="contain">
        <div class="order-nav">
         <ul class="order-nav__ul">
           <li>
@@ -39,10 +40,72 @@
         </ul>
       </div>
 
-    </div>
+      <div class="h2 center">Личные данные</div>
+      <form class="order__form">
+        <div class="order__row">
+          <div class="order__col">
+            <input class="order__input" type="text" placeholder="Фамилия и имя">
+            <input class="order__input" type="text" placeholder="Номер телефона">
+            <input class="order__input" type="text" placeholder="Электронная почта">
+            <input class="order__input" type="text" placeholder="Комментарии к заказу">
+          </div>
+          <div class="order__col">
+            <input class="order__input" type="text" placeholder="Адрес (улица, дом, квартира)">
+            <input class="order__input" type="text" placeholder="Город">
+            <input class="order__input" type="text" placeholder="Почтовый индекс">
+            <select class="order__select">
+              <option value="Страна">Страна</option>
+              <option value="Россия">Россия</option>
+              <option value="Беларусь">Беларусь</option>
+            </select>
+          </div>
+        </div>
 
-  </main>
-  @@include('var/_footer.html')
+        <div class="account__agree">
+          <p>Я согласен получать новостные рассылки</p>
+          <div class="account__agree-lbls">
+            <label class="account__agree-lbl">              
+              <input type="radio" name="agree" checked>
+              <span></span>
+              <div>Да</div>
+            </label>
+            <label class="account__agree-lbl">
+              <input type="radio" name="agree" >
+              <span></span>
+              <div>Нет</div>
+            </label>
+          </div>
+          <p>Вы первыми узнаете об эксклюзивных акциях и специальных предложениях</p>
+        </div>
+
+        <div class="security">
+          <div class="h2 center">Безопасная оплата</div>
+          <div class="security__row">
+            <label class="security__label">
+              <input type="radio" name="pay" checked>
+              <span></span>
+              <div>Онлайн оплата картой</div>
+            </label>
+            <label class="security__label">
+              <input type="radio" name="pay">
+              <span></span>
+              <div>Оплата при получении</div>
+            </label>
+          </div>
+        </div>
+
+        <div class="total">
+          <div class="h2 center">Итого</div>
+          <div class="total__count"><span>40 000</span> ₽</div>
+          <button class="total__btn btn">Подтвердить и оплатить заказ</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</main>
+@@include('var/_footer.html')
 </div>
 <!--wrapper-->
 
