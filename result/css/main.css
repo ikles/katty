@@ -371,6 +371,9 @@ body {
   body.ohi {
     overflow: hidden; }
 
+p {
+  line-height: 1.3; }
+
 .btn-o:hover,
 .btn:hover,
 *[class$="__btn"]:hover {
@@ -2428,6 +2431,88 @@ table.favourites__table {
   width: 100%;
   padding: 0 10px; }
 
+.inner-content {
+  margin-top: 19px; }
+
+.content p {
+  margin-bottom: 0; }
+  .content p:not(:last-child) {
+    margin-bottom: 15px; }
+
+.content ul {
+  padding-left: 9px;
+  margin-top: 22px;
+  margin-bottom: 23px; }
+  .content ul li {
+    padding-left: 15px;
+    position: relative; }
+    .content ul li:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: calc(50% - 4px);
+      left: 0;
+      width: 6px;
+      height: 6px;
+      background-color: #000;
+      border-radius: 50%; }
+
+.content__phones {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: -4px; }
+  .content__phones a {
+    display: inline-block;
+    color: #000;
+    border-bottom: 1px solid #000;
+    text-decoration: none; }
+    .content__phones a:not(:last-child) {
+      margin-bottom: 3px; }
+
+.delivery__links {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 22px; }
+  .delivery__links li:not(:last-child) {
+    margin-right: 40px;
+    margin-bottom: 10px; }
+  .delivery__links li a {
+    color: #000;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    padding-bottom: 2px; }
+    .delivery__links li a:hover {
+      text-decoration: none;
+      border: none; }
+
+.delivery__tabs .tabs__list-item {
+  padding: 0 60px; }
+  .delivery__tabs .tabs__list-item.active {
+    color: #FFF;
+    background-color: #000; }
+
+.delivery__tabs-content {
+  padding-top: 40px;
+  max-width: 596px;
+  width: 100%; }
+
+.h4 {
+  font-size: 28px;
+  font-family: "Lora", serif;
+  line-height: 1.3;
+  margin-bottom: 17px; }
+
 @media (max-width: 1199px) {
   .teaser__row .teaser__col {
     width: 50%; }
@@ -2735,7 +2820,7 @@ table.favourites__table {
   overflow-y: auto;*/ }
 
 body.active {
-  background: url("../img/1920.jpg") no-repeat top 0px center; }
+  background: url("../img/1920.jpg") no-repeat top -2px center; }
   body.active .wrapper {
     opacity: 0.4; }
   body.active .footer {

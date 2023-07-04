@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4. delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">  
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+  <div class="contain">
+    <div class="header__row">
+      <div class="burger">
+        <span></span>
+      </div>
+      <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
+      <div class="header__actions">
+        <a href=""><img src="img/search.svg" /></a>
+        <a href=""><img src="img/telephone.png" /></a>
+        <a href=""><img src="img/shopping-bag.svg" /></a>
+      </div>
+
+      <nav class="menu">
+        <form class="search__form">
+          <input type="text">
+          <button></button>
+        </form>
+        <ul>
+          <li><a class="_upper" href="">Новая коллекция</a></li>
+          <li class="parent">
+            <a href="">Одежда для дома</a>            
+            <ul>
+              <li><a href="">Халаты короткие</a></li>              
+              <li><a href="">Халаты длинные</a></li>              
+              <li><a href="">Пижамы</a></li>              
+              <li><a href="">Ночные сорочки</a></li>              
+              <li><a href="">Комплекты</a></li>              
+              <li><a href="">Топы</a></li>              
+              <li><a href="">Шорты</a></li>              
+              <li><a href="">Рубашки удлиненные</a></li>              
+              <li><a href="">Пижамные рубашки</a></li>              
+              <li><a href="">Пижамные шорты</a></li>
+              <li><a href="">Пижамные штаны</a></li>                    
+            </ul>
+          </li>
+          <li class="parent">
+            <a href="">Повседневная одежда</a>            
+            <ul>
+              <li><a href="">Ночные сорочки</a></li>              
+              <li><a href="">Комплекты</a></li>              
+              <li><a href="">Топы</a></li>              
+              <li><a href="">Шорты</a></li>              
+              <li><a href="">Халаты короткие</a></li>              
+              <li><a href="">Халаты длинные</a></li>              
+              <li><a href="">Пижамы</a></li>              
+              <li><a href="">Рубашки удлиненные</a></li>              
+              <li><a href="">Пижамные рубашки</a></li>              
+              <li><a href="">Пижамные шорты</a></li>
+              <li><a href="">Пижамные штаны</a></li>                    
+            </ul>
+          </li>
+          <li class="parent">
+            <a href="">Постельное белье</a>            
+            <ul>
+              <li><a href="">Халаты короткие</a></li>              
+              <li><a href="">Халаты длинные</a></li>              
+              <li><a href="">Пижамы</a></li>              
+              <li><a href="">Ночные сорочки</a></li>              
+              <li><a href="">Комплекты</a></li>              
+              <li><a href="">Топы</a></li>              
+              <li><a href="">Шорты</a></li>              
+              <li><a href="">Рубашки удлиненные</a></li>              
+              <li><a href="">Пижамные рубашки</a></li>              
+              <li><a href="">Пижамные шорты</a></li>
+              <li><a href="">Пижамные штаны</a></li>                    
+            </ul>
+          </li>
+          <li class="parent">
+            <a href="">Столовый текстиль</a>            
+            <ul>
+              <li><a href="">Рубашки удлиненные</a></li>              
+              <li><a href="">Пижамные рубашки</a></li>              
+              <li><a href="">Пижамные шорты</a></li>
+              <li><a href="">Пижамные штаны</a></li>                    
+              <li><a href="">Халаты короткие</a></li>              
+              <li><a href="">Халаты длинные</a></li>              
+              <li><a href="">Пижамы</a></li>              
+              <li><a href="">Ночные сорочки</a></li>              
+              <li><a href="">Комплекты</a></li>              
+              <li><a href="">Топы</a></li>              
+              <li><a href="">Шорты</a></li>              
+            </ul>
+          </li>
+          <li class="parent">
+            <a href="">Детская</a>            
+            <ul>
+              <li><a href="">Пижамы</a></li>              
+              <li><a href="">Ночные сорочки</a></li>              
+              <li><a href="">Халаты короткие</a></li>              
+              <li><a href="">Халаты длинные</a></li>              
+              <li><a href="">Комплекты</a></li>              
+              <li><a href="">Топы</a></li>              
+              <li><a href="">Шорты</a></li>              
+              <li><a href="">Рубашки удлиненные</a></li>              
+              <li><a href="">Пижамные рубашки</a></li>              
+              <li><a href="">Пижамные шорты</a></li>
+              <li><a href="">Пижамные штаны</a></li>                    
+            </ul>
+          </li>
+          <li class="parent">
+            <a href="">Аксессуары</a>            
+            <ul>
+              <li><a href="">Пижамные рубашки</a></li>              
+              <li><a href="">Пижамные шорты</a></li>
+              <li><a href="">Пижамные штаны</a></li>                    
+              <li><a href="">Халаты короткие</a></li>              
+              <li><a href="">Халаты длинные</a></li>              
+              <li><a href="">Пижамы</a></li>              
+              <li><a href="">Ночные сорочки</a></li>              
+              <li><a href="">Комплекты</a></li>              
+              <li><a href="">Топы</a></li>              
+              <li><a href="">Шорты</a></li>              
+              <li><a href="">Рубашки удлиненные</a></li>              
+            </ul>
+          </li>
+          <li>
+            <a class="_upper" href="">sale <img src="img/discount.svg" alt=""></a>
+          </li>
+          <li class="parent">
+            <a href="" class="_border">Вышивка на заказ</a>            
+            <ul>
+              <li><a href="">Топы</a></li>              
+              <li><a href="">Шорты</a></li>              
+              <li><a href="">Халаты короткие</a></li>              
+              <li><a href="">Халаты длинные</a></li>              
+              <li><a href="">Пижамы</a></li>              
+              <li><a href="">Ночные сорочки</a></li>              
+              <li><a href="">Комплекты</a></li>              
+              <li><a href="">Рубашки удлиненные</a></li>              
+              <li><a href="">Пижамные рубашки</a></li>              
+              <li><a href="">Пижамные шорты</a></li>
+              <li><a href="">Пижамные штаны</a></li>                    
+            </ul>
+          </li>
+          <li class="parent">
+            <a href="">Шторы на заказ</a>            
+            <ul>
+              <li><a href="">Халаты короткие</a></li>              
+              <li><a href="">Халаты длинные</a></li>              
+              <li><a href="">Пижамы</a></li>              
+              <li><a href="">Ночные сорочки</a></li>              
+              <li><a href="">Комплекты</a></li>              
+              <li><a href="">Топы</a></li>              
+              <li><a href="">Шорты</a></li>              
+              <li><a href="">Рубашки удлиненные</a></li>              
+              <li><a href="">Пижамные рубашки</a></li>              
+              <li><a href="">Пижамные шорты</a></li>
+              <li><a href="">Пижамные штаны</a></li>                    
+            </ul>
+          </li>
+          <li class="parent">
+            <a href="">Домашний текстиль на заказ</a>            
+            <ul>
+              <li><a href="">Топы</a></li>              
+              <li><a href="">Шорты</a></li>              
+              <li><a href="">Халаты короткие</a></li>              
+              <li><a href="">Халаты длинные</a></li>              
+              <li><a href="">Пижамы</a></li>              
+              <li><a href="">Ночные сорочки</a></li>              
+              <li><a href="">Комплекты</a></li>              
+              <li><a href="">Рубашки удлиненные</a></li>              
+              <li><a href="">Пижамные рубашки</a></li>              
+              <li><a href="">Пижамные шорты</a></li>
+              <li><a href="">Пижамные штаны</a></li>                    
+            </ul>
+          </li>
+          <li>
+            <a class="_upper" href="">Личный кабинет <img src="img/user.svg" alt=""></a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+    <main class="main inner-page">
+
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Доставка</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="delivery inner-content">
+        <div class="contain">
+          <div class="h2">Доставка</div>
+
+          <ul class="delivery__links">
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Возврат</a></li>
+            <li><a href="">Упаковка</a></li>
+            <li><a href="">Оплата</a></li>
+            <li><a href="">Оформление заказа</a></li>
+            <li><a href="">Заказать звонок</a></li>
+          </ul>
+
+          <div class="tabs delivery__tabs">
+            <ul class="tabs__list">
+              <li class="btn-o tabs__list-item active">Москва</li>
+              <li class="btn-o tabs__list-item">Московская область</li>
+              <li class="btn-o tabs__list-item">По России</li>
+              <li class="btn-o tabs__list-item">По миру</li>
+            </ul>
+            <ul class="tabs__content-list delivery__tabs-content content">
+              <li class="tabs__content-list-item active">
+                <div class="h4">Курьерская доставка</div>
+                <p>
+                  Интервалы доставки в будние дни: <b>с 11:00 до 18:00, с 18:00 до 21:00</b>
+                  <br>
+                  Интервалы доставки в выходные дни: <b>с 10:00 до 16:00</b>
+                </p>
+                <p>Доставка заказов курьерской службой компании возможна для жителей Москвы и МО до 30 км от МКАД.</p>
+                <br>
+                <div class="h4">Доставка в бутик</div>
+                <p>
+                  Услуга бесплатная. 
+                  <br>Заказы доставляются в бутик только по <b>100% предоплате</b>.
+                  <br>Вы можете забрать свой заказ в бутиках Katy Collection по адресам:
+                </p>
+                <ul>
+                  <li><b>Москва, Коммунарка, ул. Александры Монаховой д. 43 кор. 2</b></li>
+                </ul>
+                <p>
+                  <b>Телефоны:</b> <br>                  
+                </p>
+                <p>
+                  <span class="content__phones">
+                    <a href="tel:+7 (926) 627-88-82">+7 (926) 627-88-82</a>
+                    <a href="tel:+7 (925) 627-88-86">+7 (925) 627-88-86</a>
+                  </span>
+                </p>
+                <p>Ежедневно с 10:00 до 21:00</p>
+                <p>Заказ будет ждать вас на следующий день после его подтверждения нашим менеджером по телефону. Если заказ сделан в пятницу после 14.00, вы сможете забрать его в понедельник.</p
+                >
+                <br>
+                <br>
+                <div class="h4">Экспресс-доставка</div>
+                <p>Необходима доставка день в день?</p>
+                <p><b>Успейте оформить заказ до 14:00</b> в будние дни и получите его в этот же день с 18:00 до 21:00.</p>
+                <p>Просим отнестись с пониманием, что срочная доставка возможна только в пределах МКАД.</p>
+              </li>
+              <li class="tabs__content-list-item">
+                <p>
+                  Интервалы доставки в будние дни: <b>с 11:00 до 18:00, с 18:00 до 21:00</b>
+                  <br>
+                  Интервалы доставки в выходные дни: <b>с 10:00 до 16:00</b>
+                </p>
+                <p>Доставка заказов курьерской службой компании возможна для жителей Москвы и МО до 30 км от МКАД.</p>
+                <br>
+                <div class="h4">Доставка в бутик</div>
+                <p>
+                  Услуга бесплатная. 
+                  <br>Заказы доставляются в бутик только по <b>100% предоплате</b>.
+                  <br>Вы можете забрать свой заказ в бутиках Katy Collection по адресам:
+                </p>
+                <ul>
+                  <li><b>Москва, Коммунарка, ул. Александры Монаховой д. 43 кор. 2</b></li>
+                </ul>
+                <p>
+                  <b>Телефоны:</b> <br>                  
+                </p>
+                <p>
+                  <span class="content__phones">
+                    <a href="tel:+7 (926) 627-88-82">+7 (926) 627-88-82</a>
+                    <a href="tel:+7 (925) 627-88-86">+7 (925) 627-88-86</a>
+                  </span>
+                </p>
+                <p>Ежедневно с 10:00 до 21:00</p>
+                <p>Заказ будет ждать вас на следующий день после его подтверждения нашим менеджером по телефону. Если заказ сделан в пятницу после 14.00, вы сможете забрать его в понедельник.</p
+                >
+                <br>
+                <br>
+                <div class="h4">Экспресс-доставка</div>
+                <p>Необходима доставка день в день?</p>
+                <p><b>Успейте оформить заказ до 14:00</b> в будние дни и получите его в этот же день с 18:00 до 21:00.</p>
+                <p>Просим отнестись с пониманием, что срочная доставка возможна только в пределах МКАД.</p>
+              </li>
+              <li class="tabs__content-list-item">
+                <div class="h4">Экспресс-доставка</div>
+                <p>Необходима доставка день в день?</p>
+                <p><b>Успейте оформить заказ до 14:00</b> в будние дни и получите его в этот же день с 18:00 до 21:00.</p>
+                <p>Просим отнестись с пониманием, что срочная доставка возможна только в пределах МКАД.</p>
+                <p>
+                  Интервалы доставки в будние дни: <b>с 11:00 до 18:00, с 18:00 до 21:00</b>
+                  <br>
+                  Интервалы доставки в выходные дни: <b>с 10:00 до 16:00</b>
+                </p>
+                <p>Доставка заказов курьерской службой компании возможна для жителей Москвы и МО до 30 км от МКАД.</p>
+                <br>
+                <div class="h4">Доставка в бутик</div>
+                <p>
+                  Услуга бесплатная. 
+                  <br>Заказы доставляются в бутик только по <b>100% предоплате</b>.
+                  <br>Вы можете забрать свой заказ в бутиках Katy Collection по адресам:
+                </p>
+                <ul>
+                  <li><b>Москва, Коммунарка, ул. Александры Монаховой д. 43 кор. 2</b></li>
+                </ul>
+                <p>
+                  <b>Телефоны:</b> <br>                  
+                </p>
+                <p>
+                  <span class="content__phones">
+                    <a href="tel:+7 (926) 627-88-82">+7 (926) 627-88-82</a>
+                    <a href="tel:+7 (925) 627-88-86">+7 (925) 627-88-86</a>
+                  </span>
+                </p>
+                <p>Ежедневно с 10:00 до 21:00</p>
+                <p>Заказ будет ждать вас на следующий день после его подтверждения нашим менеджером по телефону. Если заказ сделан в пятницу после 14.00, вы сможете забрать его в понедельник.</p
+                >
+                <br>
+                <br>
+              </li>
+              <li class="tabs__content-list-item">
+                <p>
+                  Интервалы доставки в будние дни: <b>с 11:00 до 18:00, с 18:00 до 21:00</b>
+                  <br>
+                  Интервалы доставки в выходные дни: <b>с 10:00 до 16:00</b>
+                </p>
+                <p>Доставка заказов курьерской службой компании возможна для жителей Москвы и МО до 30 км от МКАД.</p>
+                <br>
+                <div class="h4">Доставка в бутик</div>
+                <p>
+                  Услуга бесплатная. 
+                  <br>Заказы доставляются в бутик только по <b>100% предоплате</b>.
+                  <br>Вы можете забрать свой заказ в бутиках Katy Collection по адресам:
+                </p>
+                <ul>
+                  <li><b>Москва, Коммунарка, ул. Александры Монаховой д. 43 кор. 2</b></li>
+                </ul>
+                <p>
+                  <b>Телефоны:</b> <br>                  
+                </p>
+                <p>
+                  <span class="content__phones">
+                    <a href="tel:+7 (926) 627-88-82">+7 (926) 627-88-82</a>
+                    <a href="tel:+7 (925) 627-88-86">+7 (925) 627-88-86</a>
+                  </span>
+                </p>
+                <p>Ежедневно с 10:00 до 21:00</p>
+                <p>Заказ будет ждать вас на следующий день после его подтверждения нашим менеджером по телефону. Если заказ сделан в пятницу после 14.00, вы сможете забрать его в понедельник.</p
+                >
+                <br>
+                <br>
+                <div class="h4">Экспресс-доставка</div>
+                <p>Необходима доставка день в день?</p>
+                <p><b>Успейте оформить заказ до 14:00</b> в будние дни и получите его в этот же день с 18:00 до 21:00.</p>
+                <p>Просим отнестись с пониманием, что срочная доставка возможна только в пределах МКАД.</p>
+              </li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </main>
+    <div class="foot">
+  <div class="contain">
+    <div class="foot__logo-w">
+      <a href="index.html" class="foot__logo"><img src="img/logo-foot.svg" /></a>
+    </div>
+    <div class="foot__row">
+      <div class="foot__col">
+        <div class="foot__title">Информация</div>
+        <ul class="foot__ul">
+          <li><a href="">Магазины Katy Collection</a></li>
+          <li><a href="">Условия покупки</a></li>
+          <li><a href="">Политика конфидинциальности</a></li>
+          <li><a href="">Cookie</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <div class="foot__title">Руководство пользователя</div>
+        <ul class="foot__ul">
+          <li><a href="">Общие вопросы</a></li>
+          <li><a href="">Оплата</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Возврат</a></li>
+          <li><a href="">Наши контакты</a></li>
+          <li><a href="">Таблица размеров</a></li>
+          <li><a href="">Программа лояльности</a></li>
+          <li><a href="">Подарочный сертификат</a></li>
+        </ul>
+      </div>
+      <div class="foot__col foot__col--3">
+        <div class="foot__title">Подписаться на наши акции и новости</div>
+        <form class="foot__btn-w">
+          <input class="foot__btn-mail" type="text" placeholder="Электронная почта">
+          <button class="foot__btn">Отправить</button>
+        </form>
+        <a href="" class="foot__favorit__btn">Избранное<i></i></a>
+      </div>
+    </div>
+    <div class="foot__socs">
+      <div class="foot__socs-title">Мы в:</div>
+      <div class="foot__socs-row">
+        <a href="" class="foot__soc"><img src="img/whatsapp.svg" /></a>
+        <a href="" class="foot__soc"><img src="img/instagram.svg" /></a>
+        <a href="" class="foot__soc"><img src="img/telegram.svg" /></a>
+        <a href="" class="foot__soc"><img src="img/vk.svg" /></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="overlay"></div>
+
+  </div>
+  <!--wrapper-->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+
+</html>

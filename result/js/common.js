@@ -206,6 +206,7 @@ jQuery(document).ready(function( $ ) {
   }
 
   tabs('.card__tabs');
+  tabs('.delivery__tabs');
 
 /************************************/
 

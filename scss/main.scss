@@ -70,6 +70,10 @@ body {
   }  
 }
 
+p {
+  line-height: 1.3;
+}
+
 .btn-o,
 .btn,
 *[class$="__btn"] {  
@@ -2248,6 +2252,115 @@ table.favourites__table {
   padding: 0 10px;
 }
 
+.inner-content {
+  margin-top: 19px;
+}
+.content {
+  p {
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  ul {
+    padding-left: 9px;
+    margin-top: 22px;
+    margin-bottom: 23px;
+    li {
+      padding-left: 15px;
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: calc(50% - 4px);
+        left: 0;
+        width: 6px;
+        height: 6px;
+        background-color: #000;        
+        border-radius: 50%;
+      }  
+    }
+  }
+}
+
+.content__phones {
+  display: flex;  
+  flex-direction: column;  
+  align-items: flex-start;
+  margin-top: -4px;
+  a {
+    display: inline-block;
+    color: #000;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.delivery__links {
+  display: flex;  
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+  li {
+    &:not(:last-child) {
+      margin-right: 40px;
+      margin-bottom: 10px;
+    }
+    a {
+      color: #000;
+      border-bottom: 1px solid #000;
+      display: inline-block;
+      padding-bottom: 2px;
+      &:hover {
+        text-decoration: none;
+        border: none;
+      }
+    }
+  }
+}
+
+
+
+.delivery__tabs {
+  .tabs__list-item {
+    padding: 0 60px;
+    &.active {
+      color: #FFF;
+      background-color: #000;
+    }
+  }
+
+}
+
+.tabs__list {
+}
+
+.tabs__list-item.active {
+}
+
+
+.delivery__tabs-content {
+  padding-top: 40px;
+  max-width: 596px;
+  width: 100%;
+}
+
+.tabs__content-list-item.active {
+}
+
+.tabs__content-list-item {
+}
+
+.h4 {
+  font-size: 28px;
+  font-family: $ff2;
+  line-height: 1.3;
+  margin-bottom: 17px;
+}
+
 //20
 
 @media (max-width : 1199px) {
@@ -2627,7 +2740,7 @@ table.favourites__table {
 
 body {  
   &.active {
-    background: url("../img/1920.jpg") no-repeat top 0px center;
+    background: url("../img/1920.jpg") no-repeat top -2px center;
     .wrapper {
       opacity: 0.4;
     } 
