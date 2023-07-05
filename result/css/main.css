@@ -480,9 +480,11 @@ p {
   top: 0;
   left: 0;
   overflow-y: scroll;
-  z-index: 5;
+  z-index: 12;
   display: none;
-  background: rgba(45, 40, 40, 0.5); }
+  background: rgba(0, 0, 0, 0.2); }
+  .modal-overlay_1 {
+    /*display: block;*/ }
 
 .modal-form__layout {
   height: 100%;
@@ -492,16 +494,20 @@ p {
 
 .modal-form__block {
   position: absolute;
-  top: 5%;
+  top: 50%;
   margin-bottom: 20px;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-      -ms-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 6;
-  width: 555px;
   background-color: #FFF;
-  min-height: 100px; }
+  min-height: 100px;
+  padding: 35px 50px 50px 50px; }
+
+.modal-form__sign {
+  max-width: 806px;
+  width: 100%; }
 
 .modal-form__inner {
   position: relative; }
@@ -515,7 +521,48 @@ p {
   z-index: 7;
   width: 24px;
   height: 24px;
-  background: url("../img/close-w.svg") no-repeat 0 0; }
+  font-size: 0;
+  background: url("../img/close.svg") no-repeat 0 0; }
+
+.account__form {
+  padding-right: 30px; }
+  .account__form input[type="text"] {
+    color: #000; }
+    .account__form input[type="text"]::-webkit-input-placeholder {
+      color: #828282; }
+    .account__form input[type="text"]::-moz-placeholder {
+      color: #828282; }
+    .account__form input[type="text"]:-ms-input-placeholder {
+      color: #828282; }
+    .account__form input[type="text"]::placeholder {
+      color: #828282; }
+
+.account__form-top {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px; }
+  .account__form-top input[type="text"] {
+    width: calc(33.3333% - 13.333px); }
+
+.account__form-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px; }
+  .account__form-row input[type="text"] {
+    width: calc(50% - 5px); }
+
+.account__submit {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 /*end modal*/
 ._upper {

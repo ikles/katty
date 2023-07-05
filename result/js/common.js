@@ -249,8 +249,8 @@ $('.eye-3').click(function (e) {
 
   }
 
+  popup('.sign', '.modal-overlay_1', '.modal-close_1');
   popup('.link2', '.modal-overlay_2', '.modal-close_2');
-  popup('.link', '.modal-overlay_1', '.modal-close_1');
 
 
 /*.btn__quick
