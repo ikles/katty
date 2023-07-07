@@ -65,13 +65,18 @@
 } //991
 
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 767px) {  
   .contain {
     max-width: 600px;    
   }
 }//767
 
 @media only screen and (max-width : 640px) {
+  .card__right {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card__right,
   .contain {
     max-width: 530px;
   }
@@ -80,11 +85,16 @@
 
 
 @media only screen and (max-width : 575px) {
+  .card__right,
   .contain {
     width: 100%;
     max-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .card__contain {
+    padding-left: 0;
+    padding-right: 0;
   }
 }//575
 
@@ -101,6 +111,16 @@
 @media only screen and (max-width : 360px) {
   
 }//360
+
+@media (max-width : 359px) {
+  .contain {
+    padding: 0 15px;
+  }
+  .card__contain {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 @media only screen and (max-width : 320px) {
   body, body > * {

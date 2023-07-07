@@ -9,12 +9,6 @@ jQuery(document).ready(function( $ ) {
   
 
 
-
-
-
-
-
-
 //levels menu
   let isMobile={Android:function(){return navigator.userAgent.match(/Android/i)},BlackBerry:function(){return navigator.userAgent.match(/BlackBerry/i)},iOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)},Opera:function(){return navigator.userAgent.match(/Opera Mini/i)},Windows:function(){return navigator.userAgent.match(/IEMobile/i)},any:function(){return(isMobile.Android()||isMobile.BlackBerry()||isMobile.iOS()||isMobile.Opera()||isMobile.Windows())}}
 
@@ -78,14 +72,21 @@ jQuery(document).ready(function( $ ) {
   $('body').click(function () {    
     $('nav.menu').removeClass('show');
     $('.overlay').removeClass('show');
+    $('.phone__modal').removeClass('show');    
     $('.sort__item').removeClass('open');
     $('.sort__item-rendered').removeClass('show');
   });
 
 
-  $("nav.menu, .burger, .sort__item, .sort__item-rendered").click(function (e) {
+  $("nav.menu, .burger, .sort__item, .sort__item-rendered, .header__actions, .phone__modal").click(function (e) {
     e.stopPropagation();
   });
+
+  $('.filters__more').click(function () {
+    $('.sort__filters-row').slideToggle();
+  });
+
+  
   
 
   $('.topslider').slick({
@@ -155,8 +156,18 @@ jQuery(document).ready(function( $ ) {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
+    responsive: [
+
+    {
+      breakpoint: 641,
+      settings: {
+        arrows: true
+      }
+    }
+    ]
   });
+
   $('.slider-nav').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -165,7 +176,17 @@ jQuery(document).ready(function( $ ) {
     arrows: false,
     centerMode: false,
     vertical: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [
+
+    {
+      breakpoint: 1200,
+      settings: {
+        vertical: false,
+        slidesToShow: 3
+      }
+    }
+    ]
   });
 
 
@@ -249,9 +270,18 @@ $('.eye-3').click(function (e) {
 
   }
 
-  popup('.sign', '.modal-overlay_1', '.modal-close_1');
+  popup('.link1', '.modal-overlay_1', '.modal-close_1');
   popup('.link2', '.modal-overlay_2', '.modal-close_2');
+  popup('.card__add', '.modal-overlay_3', '.modal-close_3');
+  popup('.btn__quick', '.modal-overlay_4', '.modal-close_4');
+  popup('.btn__discount', '.modal-overlay_5', '.modal-close_5');
 
+
+  $('.header__phone').click(function (e) {
+    e.preventDefault();
+    $('.phone__modal').toggleClass('show');
+    $('.overlay').addClass('show');
+  });
 
 /*.btn__quick
 .btn__discount*/

@@ -34,11 +34,15 @@
       </div>
       <a href="index.html" class="logo"><img src="img/logo.svg" /></a>
       <div class="header__actions">
+        <div class="phone__modal">
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=79266278882" class="cons__whats">Консультация по WhatsApp</a>
+          <a href="tel:+7 (926) 627-88-82" class="cons__phone">+7 (926) 627-88-82</a>
+          <a href="" class="cons__btn btn">Контакты</a>
+        </div>
         <a href=""><img src="img/search.svg" /></a>
-        <a href=""><img src="img/telephone.png" /></a>
+        <a class="header__phone" href=""><img src="img/telephone.png" /></a>
         <a href=""><img src="img/shopping-bag.svg" /></a>
       </div>
-
       <nav class="menu">
         <form class="search__form">
           <input type="text">
@@ -218,11 +222,8 @@
       <div class="modals">
         <div class="contain">
           <ul>
-            <li><a class="sign" href="">Создать учётную запись</a></li>
-            <li><a class="login" href="">Войти</a></li>
-            <li><a class="sign" href="">Создать</a></li>
-            <li><a class="sign" href="">Создать</a></li>
-            <li><a class="sign" href="">Создать</a></li>
+            <li><a class="link1" href="">Создать учётную запись</a></li>
+            <li><a class="link2" href="">Войти</a></li>            
           </ul>
         </div>
       </div>
@@ -303,8 +304,8 @@
   
 <div class="modal-overlay modal-overlay_1">        
   <div class="modal-form__layout"></div>
-  <div class="modal-form__block modal-form__sign">
-      <span class="modal-close modal-close_1">X</span>
+  <div class="modal-form__block modal-form__create">
+    <span class="modal-close modal-close_1">X</span>
     <div class="modal-form__inner">
       <div class="h2 center">Создать учётную запись</div>
 
@@ -342,11 +343,181 @@
   </div>
 </div><!--modal-overlay-->
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/slick.js"></script>
-<script src="js/select2.min.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/common.js"></script>
+
+<div class="modal-overlay modal-overlay_2">        
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block modal-form__sign">
+    <span class="modal-close modal-close_2">X</span>
+    <div class="modal-form__inner">
+      <div class="h2 center">Войти</div>
+
+      <form class="account__form">
+
+        <input class="account__nput-text" type="text" placeholder="Электронная почта" />
+        <input class="account__nput-text" type="text" placeholder="Пароль" />
+        
+        <a href="" class="account__forget">Забыли пароль?</a>
+
+        <div class="sign__btns">
+          <button class="account__submit btn">Войти</button>
+          <button class="account__submit btn-o">Создать учетную запись</button>
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+</div><!--modal-overlay-->
+
+
+<div class="modal-overlay modal-overlay_3">        
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block modal-form__add">
+    <span class="modal-close modal-close_3">X</span>
+    <div class="modal-form__inner">
+
+      <div class="h2 center">Добавить вышивку</div>
+      <div class="add__stages">
+        <div class="add__stages-row">
+          <div class="add__stages-numb">1</div>
+          <div class="add__stages-txt">Выберите место вышивки</div>
+        </div>
+        <div class="add__stages-content">
+          <div class="add__stages-w">
+
+            <label class="add__stages-item">
+              <input type="radio" name="side" checked>
+              <span class="add__stages-img-w">
+                <img src="img/add-1.jpg" class="add__stages-img" />
+              </span>
+              <span class="add__stages-desc">
+                <span class="add__desc-txt">На спине</span>
+                <span class="add__desc-price">+1 500 ₽</span>
+              </span>
+            </label>
+
+            <label class="add__stages-item">
+              <input type="radio" name="side">
+              <span class="add__stages-img-w"><img src="img/add-2.jpg" class="add__stages-img" /></span><span class="add__stages-desc"><span class="add__desc-txt">На манжете</span><span class="add__desc-price">+1 500 ₽</span></span>
+            </label>
+
+            <label class="add__stages-item">
+              <input type="radio" name="side">
+              <span class="add__stages-img-w">
+                <img src="img/add-3.jpg" class="add__stages-img" /></span>
+                <span class="add__stages-desc">
+                  <span class="add__desc-txt">На воротнике</span>
+                  <span class="add__desc-price">+1 500 ₽</span>
+                </span>
+              </label>
+
+            </div>
+          </div>
+        </div>
+        <div class="add__stages">
+          <div class="add__stages-row">
+            <div class="add__stages-numb">2</div>
+            <div class="add__stages-txt">Укажите текст вышивки на изделии</div>
+          </div>
+          <input class="add__stages-input" type="text" placeholder="Текст вышивки" />
+        </div>
+        <div class="add__stages">
+          <div class="add__btn-embr">
+            <div class="add__stages-numb">3</div>
+            <a href="" class="add__btn-2 btn">Добавить Вышивку в корзину</a>
+          </div>
+          <div class="add__btn-embr">
+            <div class="add__stages-numb">4</div>
+            <a href="" class="add__btn btn">Подтвердить заказ</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div><!--modal-overlay-->
+
+
+  <div class="modal-overlay modal-overlay_4">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block modal-form__buy">
+      <span class="modal-close modal-close_4">X</span>
+      <div class="modal-form__inner">        
+        <div class="h2 center">Купить в 1 клик</div>
+        <div class="buy__prod-w">
+          <div class="buy__prod">
+            <div class="buy__img"><img src="img/prod.jpg" /></div>
+            <div class="buy__prod-inf">
+              <div class="buy__prod-title">Пижамный костюм Katy Lux Home</div>              
+              <div class="basket-item__params buy__prod-charact-row">
+                <span>Цвет: <span>Красный</span></span>
+                <span>Размер: <span>S</span></span>
+              </div> 
+              <div class="buy__quan">
+                <div class="buy__quan-choice _minus"><img src="img/minus-buy.svg"></div>
+                <input class="basket-count__input" type="text" value="1">
+                <div class="buy__quan-choice _plus"><img src="img/plus-buy.svg"></div>
+              </div>             
+            </div>
+          </div>
+          
+
+          <select class="card__select-size card__size">
+            <option value="Размер">Размер</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+          </select>
+
+          <div class="buy__prod-cont"><input class="buy__prod-cont-input" type="text" placeholder="Имя" /><input class="buy__prod-cont-input" type="text" placeholder="Номер телефона" /></div>
+          <div class="buy__confirm-w">
+            <div class="buy__confirm-price">10 000 ₽</div>
+            <a href="" class="buy__confirm-btn btn">Заказать</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div><!--modal-overlay-->
+
+
+
+ <div class="modal-overlay modal-overlay_5">        
+    <div class="modal-form__layout"></div>
+    <div class="modal-form__block modal-form__buy">
+      <span class="modal-close modal-close_5">X</span>
+      <div class="modal-form__inner">        
+        <div class="h2 center">Запрос скидки</div>
+        <div class="buy__prod-w">
+          <div class="buy__prod">
+            <div class="buy__img"><img src="img/prod.jpg" /></div>
+            <div class="buy__prod-inf">
+              <div class="buy__prod-title">Пижамный костюм Katy Lux Home</div>
+            <div class="basket-item__params buy__prod-charact-row">
+                <span>Цвет: <span>Красный</span></span>
+                <span>Размер: <span>S</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="buy__prod-cont">
+            <input class="buy__prod-cont-input" type="text" placeholder="Имя" />
+            <input class="buy__prod-cont-input" type="text" placeholder="Номер телефона" />
+            <input class="buy__prod-cont-input" type="text" placeholder="Укажите желаемый размер скидки в %" />
+          </div>
+          <div class="buy__confirm-w">            
+            <a href="" class="w100 btn">Отправить</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div><!--modal-overlay-->
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 
 </html>
