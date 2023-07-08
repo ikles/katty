@@ -52,6 +52,11 @@ jQuery(document).ready(function( $ ) {
     );*/
 
 
+  $('nav.menu > ul > li.parent > a + span').click(function () {
+    $(this).toggleClass('rotate90').next().toggleClass('open');
+  });
+
+
   $('.burger').click(function () {
     $('nav.menu').toggleClass('show');
     $('.overlay').toggleClass('show');
@@ -86,7 +91,13 @@ jQuery(document).ready(function( $ ) {
     $('.sort__filters-row').slideToggle();
   });
 
+  $('.menu__close').click(function () {    
+    $('nav.menu').removeClass('show');
+    $('.overlay').removeClass('show');
+  });
+
   
+
   
 
   $('.topslider').slick({
