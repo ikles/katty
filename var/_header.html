@@ -11,186 +11,61 @@
           <a href="tel:+7 (926) 627-88-82" class="cons__phone">+7 (926) 627-88-82</a>
           <a href="" class="cons__btn btn">Контакты</a>
         </div>
-        <a href=""><img src="img/search.svg" /></a>
+        <a class="header__search" href=""><img src="img/search.svg" /></a>
         <a class="header__phone" href=""><img src="img/telephone.png" /></a>
         <a href=""><img src="img/shopping-bag.svg" /></a>
       </div>
       <nav class="menu">
         <div class="menu__close"></div>
-        <form class="search__form">
-          <input type="text">
-          <button></button>
-        </form>
-
-
-        <div class="cons__w show-575">
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=79266278882" class="cons__whats">Консультация по WhatsApp</a>
-          <a href="tel:+7 (926) 627-88-82" class="cons__phone">+7 (926) 627-88-82</a>
-          <a href="" class="cons__btn btn">Контакты</a>
-        </div>
-
-        <ul>
-          <li><a class="_upper" href="">Новая коллекция</a></li>
+        <ul class="level-1">
+          <form class="search__form">
+            <input type="text" placeholder="Найти">
+            <button></button>
+          </form>
+          <div class="cons__w show-575">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=79266278882" class="cons__whats">Консультация по WhatsApp</a>
+            <a href="tel:+7 (926) 627-88-82" class="cons__phone">+7 (926) 627-88-82</a>
+            <a href="" class="cons__btn btn">Контакты</a>
+          </div>
+          <li><a class="" href="">Новая коллекция</a></li>          
           <li class="parent">
-            <a href="">Одежда для дома</a>            
+            <a href="">Женщинам</a>
             <span></span>
-            <ul>
-              <li><a href="">Халаты короткие</a></li>              
-              <li><a href="">Халаты длинные</a></li>              
-              <li><a href="">Пижамы</a></li>              
-              <li><a href="">Ночные сорочки</a></li>              
-              <li><a href="">Комплекты</a></li>              
-              <li><a href="">Топы</a></li>              
-              <li><a href="">Шорты</a></li>              
-              <li><a href="">Рубашки удлиненные</a></li>              
-              <li><a href="">Пижамные рубашки</a></li>              
-              <li><a href="">Пижамные шорты</a></li>
-              <li><a href="">Пижамные штаны</a></li>                    
-            </ul>
+            @@include('var/_level_2.html')
           </li>
           <li class="parent">
-            <a href="">Повседневная одежда</a>
+            <a href="">Мужчинам</a>
             <span></span>
-            <ul>
-              <li><a href="">Ночные сорочки</a></li>              
-              <li><a href="">Комплекты</a></li>              
-              <li><a href="">Топы</a></li>              
-              <li><a href="">Шорты</a></li>              
-              <li><a href="">Халаты короткие</a></li>              
-              <li><a href="">Халаты длинные</a></li>              
-              <li><a href="">Пижамы</a></li>              
-              <li><a href="">Рубашки удлиненные</a></li>              
-              <li><a href="">Пижамные рубашки</a></li>              
-              <li><a href="">Пижамные шорты</a></li>
-              <li><a href="">Пижамные штаны</a></li>                    
-            </ul>
+            @@include('var/_level_2.html')
           </li>
           <li class="parent">
-            <a href="">Постельное белье</a>  
-            <span></span>         
-            <ul>
-              <li><a href="">Халаты короткие</a></li>              
-              <li><a href="">Халаты длинные</a></li>              
-              <li><a href="">Пижамы</a></li>              
-              <li><a href="">Ночные сорочки</a></li>              
-              <li><a href="">Комплекты</a></li>              
-              <li><a href="">Топы</a></li>              
-              <li><a href="">Шорты</a></li>              
-              <li><a href="">Рубашки удлиненные</a></li>              
-              <li><a href="">Пижамные рубашки</a></li>              
-              <li><a href="">Пижамные шорты</a></li>
-              <li><a href="">Пижамные штаны</a></li>                    
-            </ul>
+            <a href="">Детям</a>
+            <span></span>
+            @@include('var/_level_2.html')
           </li>
           <li class="parent">
-            <a href="">Столовый текстиль</a> 
-            <span></span>           
-            <ul>
-              <li><a href="">Рубашки удлиненные</a></li>              
-              <li><a href="">Пижамные рубашки</a></li>              
-              <li><a href="">Пижамные шорты</a></li>
-              <li><a href="">Пижамные штаны</a></li>                    
-              <li><a href="">Халаты короткие</a></li>              
-              <li><a href="">Халаты длинные</a></li>              
-              <li><a href="">Пижамы</a></li>              
-              <li><a href="">Ночные сорочки</a></li>              
-              <li><a href="">Комплекты</a></li>              
-              <li><a href="">Топы</a></li>              
-              <li><a href="">Шорты</a></li>              
-            </ul>
+            <a href="">Дом</a>
+            <span></span>
+            @@include('var/_level_2.html')
           </li>
           <li class="parent">
-            <a href="">Детская</a>   
-            <span></span>         
-            <ul>
-              <li><a href="">Пижамы</a></li>              
-              <li><a href="">Ночные сорочки</a></li>              
-              <li><a href="">Халаты короткие</a></li>              
-              <li><a href="">Халаты длинные</a></li>              
-              <li><a href="">Комплекты</a></li>              
-              <li><a href="">Топы</a></li>              
-              <li><a href="">Шорты</a></li>              
-              <li><a href="">Рубашки удлиненные</a></li>              
-              <li><a href="">Пижамные рубашки</a></li>              
-              <li><a href="">Пижамные шорты</a></li>
-              <li><a href="">Пижамные штаны</a></li>                    
-            </ul>
+            <a href="">Family look</a>
+            <span></span>
+            @@include('var/_level_2.html')
           </li>
           <li class="parent">
-            <a href="">Аксессуары</a>
-            <span></span>            
-            <ul>
-              <li><a href="">Пижамные рубашки</a></li>              
-              <li><a href="">Пижамные шорты</a></li>
-              <li><a href="">Пижамные штаны</a></li>                    
-              <li><a href="">Халаты короткие</a></li>              
-              <li><a href="">Халаты длинные</a></li>              
-              <li><a href="">Пижамы</a></li>              
-              <li><a href="">Ночные сорочки</a></li>              
-              <li><a href="">Комплекты</a></li>              
-              <li><a href="">Топы</a></li>              
-              <li><a href="">Шорты</a></li>              
-              <li><a href="">Рубашки удлиненные</a></li>              
-            </ul>
+            <a href="">Sale %</a>
+            <span></span>
+            @@include('var/_level_2.html')
+          </li>
+          <li class="parent">
+            <a href="">Katy Collection Club</a>
+            <span></span>
+            @@include('var/_level_2.html')
           </li>
           <li>
-            <a class="_upper" href="">sale <img src="img/discount.svg" alt=""></a>
+            <a href="">История</a>            
           </li>
-          <li class="parent">
-            <a href="" class="_border">Вышивка на заказ</a>     
-            <span></span>       
-            <ul>
-              <li><a href="">Топы</a></li>              
-              <li><a href="">Шорты</a></li>              
-              <li><a href="">Халаты короткие</a></li>              
-              <li><a href="">Халаты длинные</a></li>              
-              <li><a href="">Пижамы</a></li>              
-              <li><a href="">Ночные сорочки</a></li>              
-              <li><a href="">Комплекты</a></li>              
-              <li><a href="">Рубашки удлиненные</a></li>              
-              <li><a href="">Пижамные рубашки</a></li>              
-              <li><a href="">Пижамные шорты</a></li>
-              <li><a href="">Пижамные штаны</a></li>                    
-            </ul>
-          </li>
-          <li class="parent">
-            <a href="">Шторы на заказ</a>
-            <span></span>            
-            <ul>
-              <li><a href="">Халаты короткие</a></li>              
-              <li><a href="">Халаты длинные</a></li>              
-              <li><a href="">Пижамы</a></li>              
-              <li><a href="">Ночные сорочки</a></li>              
-              <li><a href="">Комплекты</a></li>              
-              <li><a href="">Топы</a></li>              
-              <li><a href="">Шорты</a></li>              
-              <li><a href="">Рубашки удлиненные</a></li>              
-              <li><a href="">Пижамные рубашки</a></li>              
-              <li><a href="">Пижамные шорты</a></li>
-              <li><a href="">Пижамные штаны</a></li>                    
-            </ul>
-          </li>
-          <li class="parent">
-            <a href="">Домашний текстиль на заказ</a> 
-            <span></span>           
-            <ul>
-              <li><a href="">Топы</a></li>              
-              <li><a href="">Шорты</a></li>              
-              <li><a href="">Халаты короткие</a></li>              
-              <li><a href="">Халаты длинные</a></li>              
-              <li><a href="">Пижамы</a></li>              
-              <li><a href="">Ночные сорочки</a></li>              
-              <li><a href="">Комплекты</a></li>              
-              <li><a href="">Рубашки удлиненные</a></li>              
-              <li><a href="">Пижамные рубашки</a></li>              
-              <li><a href="">Пижамные шорты</a></li>
-              <li><a href="">Пижамные штаны</a></li>                    
-            </ul>
-          </li>
-          <li>
-            <a class="_upper" href="">Личный кабинет <img src="img/user.svg" alt=""></a>
-          </li>
-
         </ul>
       </nav>
 

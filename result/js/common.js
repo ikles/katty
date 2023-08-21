@@ -36,25 +36,10 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  $(".parent").hover(
-    function() {
-      $('.mouse nav.menu').addClass('open');      
-    }, function() {
-      $('.mouse nav.menu').removeClass('open');      
-    }
-    );
-
-/*  $(".mouse .burger").hover(
-    function() {
-      $('nav.menu').addClass('show');      
-    }, function() {      
-    }
-    );*/
 
 
-  $('nav.menu > ul > li.parent > a + span').click(function () {
-    $(this).toggleClass('rotate90').next().toggleClass('open');
-  });
+
+  
 
 
   $('.burger').click(function () {
@@ -63,15 +48,32 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-  $(".mouse nav.menu").hover(
-    function() {
 
-    }, function() {      
-      $('nav.menu').removeClass('show');  
-      $('.overlay').removeClass('show');  
-    }
-    );
 
+  $('ul.level-1 > .parent > span').click(function () {
+    $('ul.level-1 > .parent').removeClass('active')
+    $(this).closest('.parent').addClass('active');
+    $('.level-2').removeClass('open');
+    $(this).addClass('rotate90').siblings('.level-2').addClass('open');
+  });
+
+  $('ul.level-2 .parent > span').click(function () {    
+    $('ul.level-2 .parent').removeClass('active')
+    $(this).closest('.parent').addClass('active');
+    $('.level-3').removeClass('open');
+    $(this).addClass('rotate90').siblings('.level-3').addClass('open');
+  });
+
+
+  $('.back').click(function () {
+    $(this).closest('.level-3').removeClass('open');
+    $('.rotate90').removeClass('rotate90');
+  });
+
+  $('.back-2').click(function () {
+    $(this).closest('.level-2').removeClass('open');
+    $('.rotate90').removeClass('rotate90');
+  });
 
 
   $('body').click(function () {    
@@ -268,11 +270,11 @@ $('.eye-3').click(function (e) {
     });
     $(closeEl).click(function(e) {
       e.preventDefault();
-      $(windowEl).fadeOut();
+      $(windowEl).hide();
       $('body').removeClass('ohi');
     });
     $('.modal-overlay').click(function () {
-      $(this).fadeOut();
+      $(this).hide();
       $('body').removeClass('ohi');
     });
     $('.modal-form__block').click(function (e) {
@@ -290,7 +292,7 @@ $('.eye-3').click(function (e) {
 
   $('.header__phone').click(function (e) {
     e.preventDefault();
-    $('.phone__modal').toggleClass('show');
+    $('.phone__modal').addClass('show');
     $('.overlay').addClass('show');
   });
 
